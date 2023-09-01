@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className='hero_section_main'>
 			<AppHeader />
-			<div className='md:mt-[100px] p-2'>
+			<div className='mt-[100px] p-2'>
 				<Text
 					color='red'
 					ff={'Nunito, sans-serif'}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+#root {
+	font-family: Nunito, sans-serif !important;
+}
+
+body {
+	font-family: Nunito, sans-serif !important;
+}
+
+.hero_section_main {
+	background-image: url('./assets/images/hero-bg.jpg');
+	background-color: rgba(0, 0, 0, 0);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100vh;
+	opacity: 1;
+	visibility: inherit;
+	z-index: 20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

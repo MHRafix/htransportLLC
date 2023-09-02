@@ -4,7 +4,13 @@ import AboutUsImage from '../../assets/images/aboutus.jpg';
 const AboutUs = () => {
 	return (
 		<div className='text-center'>
-			<Title fz={55} ff={'Nunito, sans-serif'} fw={800} lh={1.2} color='yellow'>
+			<Title
+				className='!text-[35px] md:!text-[55px]'
+				ff={'Nunito, sans-serif'}
+				fw={800}
+				lh={1.2}
+				color='yellow'
+			>
 				Why Choose Us
 			</Title>
 			<Text size={'md'} color='red' fw={500}>

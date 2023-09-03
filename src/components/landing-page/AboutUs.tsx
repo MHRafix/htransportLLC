@@ -11,10 +11,10 @@ const AboutUs = () => {
 				lh={1.2}
 				color='yellow'
 			>
-				Why Choose Us
+				About Us
 			</Title>
 			<Text size={'md'} color='red' fw={500}>
-				Best offers Information
+				Who are we
 			</Text>
 
 			<Space h={40} />

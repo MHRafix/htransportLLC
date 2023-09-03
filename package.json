@@ -18,6 +18,7 @@
 		"@mantine/notifications": "^6.0.19",
 		"@tabler/icons": "^2.32.0",
 		"@tabler/icons-react": "^2.32.0",
+		"emailjs-com": "^3.2.0",
 		"embla-carousel-react": "8.0.0-rc12",
 		"localforage": "^1.10.0",
 		"match-sorter": "^6.3.1",
@@ -25,7 +26,8 @@
 		"react-countup": "^6.4.2",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.15.0",
-		"sort-by": "^1.2.0"
+		"sort-by": "^1.2.0",
+		"yup": "^1.2.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.15",

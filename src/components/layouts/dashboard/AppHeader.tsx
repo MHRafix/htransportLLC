@@ -31,6 +31,7 @@ const AppHeader: React.FC = () => {
 				{menus.map((menu, idx) => (
 					<NavLink
 						onClick={() => setPath(menu?.navigatorId)}
+						ff={"Nunito, sans-serif"}
 						key={idx}
 						fw={500}
 						color='yellow'

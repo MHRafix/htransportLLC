@@ -1,34 +1,21 @@
 import { Container, NavLink, Title } from '@mantine/core';
-import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 const AppHeader: React.FC = () => {
-	const menus = [
-		{
-			label: 'Home',
-			navigatorId: '#home',
-		},
-		{
-			label: 'About',
-			navigatorId: '#about_us',
-		},
-		{
-			label: 'Success',
-			navigatorId: '#success_history',
-		},
-		{
-			label: 'Contact',
-			navigatorId: '#contact_us',
-		},
-	];
+	const [path, setPath] = useState<string>();
 
+	useEffect(() => {
+		setPath(window.location.hash as string);
+	}, [window.location.hash]);
+
+	console.log(path);
 	return (
 		<Container
 			size='lg'
 			py='sm'
 			px={'lg'}
 			// h={80}
-			className='bg-[#fff] md:flex items-center justify-between fixed shadow-lg w-full top-8 rounded-lg'
+			className='bg-[#fff] md:flex items-center justify-between fixed shadow-lg w-full top-8 rounded-lg z-10'
 		>
 			<Title
 				className='md:text-left text-center md:mb-0 mb-2'
@@ -43,11 +30,13 @@ const AppHeader: React.FC = () => {
 			<div className='menu_area md:mt-0 mt-2'>
 				{menus.map((menu, idx) => (
 					<NavLink
+						onClick={() => setPath(menu?.navigatorId)}
 						key={idx}
 						fw={500}
-						color='#FFCC00'
+						color='yellow'
 						mx={15}
 						component='a'
+						active={menu?.navigatorId === path}
 						href={menu?.navigatorId}
 						label={menu?.label}
 					/>
@@ -58,3 +47,22 @@ const AppHeader: React.FC = () => {
 };
 
 export default AppHeader;
+
+const menus = [
+	{
+		label: 'Home',
+		navigatorId: '#home',
+	},
+	{
+		label: 'About',
+		navigatorId: '#about_us',
+	},
+	{
+		label: 'Success',
+		navigatorId: '#success_history',
+	},
+	{
+		label: 'Contact',
+		navigatorId: '#contact_us',
+	},
+];

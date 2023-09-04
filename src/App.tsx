@@ -4,6 +4,7 @@ import AboutUs from './components/landing-page/AboutUs';
 import ContactUs from './components/landing-page/ContactUs';
 import HeroSection from './components/landing-page/HeroSection';
 import SuccessHistory from './components/landing-page/SuccessHistory';
+import AppFooter from './components/layouts/dashboard/AppFooter';
 import AppHeader from './components/layouts/dashboard/AppHeader';
 function App() {
 	return (
@@ -21,6 +22,9 @@ function App() {
 				<Space h={70} />
 				<ContactUs />
 			</Container>
+			<Space h={70} />
+
+			<AppFooter />
 		</>
 	);
 }

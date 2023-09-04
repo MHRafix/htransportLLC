@@ -5,11 +5,10 @@ import ContactUs from './components/landing-page/ContactUs';
 import HeroSection from './components/landing-page/HeroSection';
 import SuccessHistory from './components/landing-page/SuccessHistory';
 import AppHeader from './components/layouts/dashboard/AppHeader';
-
 function App() {
 	return (
 		<>
-			<div className='hero_section_main'>
+			<div className='hero_section_main' id='home'>
 				<AppHeader />
 
 				<HeroSection />

@@ -27,12 +27,11 @@ const ContactUs = () => {
 
 	const handleSubmit = () => {
 		setSending(true);
-		console.log(contactForm.current);
 		emailjs
 			.sendForm(
 				'service_o2us7mn',
 				'template_4dzktqb',
-				contactForm.current,
+				contactForm.current!,
 				'MK4dczEFH1Vz4HxjE'
 			)
 			.then(
@@ -52,7 +51,7 @@ const ContactUs = () => {
 			);
 	};
 	return (
-		<Box>
+		<Box id='contact_us'>
 			<Title
 				className='!text-[35px] md:!text-[55px] text-center'
 				ff={'Nunito, sans-serif'}
@@ -68,7 +67,11 @@ const ContactUs = () => {
 
 			<Space h={40} />
 			<div className='grid lg:grid-cols-2 gap-5'>
-				<form ref={contactForm} onSubmit={form.onSubmit(handleSubmit)}>
+				<form
+					// @ts-ignore
+					ref={contactForm}
+					onSubmit={form.onSubmit(handleSubmit)}
+				>
 					<TextInput
 						ff={'Nunito, sans-serif'}
 						label='Your name'

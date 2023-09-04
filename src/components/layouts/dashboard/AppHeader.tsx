@@ -1,5 +1,6 @@
-import { Container, NavLink } from '@mantine/core';
+import { Container, NavLink, Title } from '@mantine/core';
 import React from 'react';
+// import { NavLink } from 'react-router-dom';
 
 const AppHeader: React.FC = () => {
 	const menus = [
@@ -13,31 +14,42 @@ const AppHeader: React.FC = () => {
 		},
 		{
 			label: 'Success',
-			navigatorId: '#success',
+			navigatorId: '#success_history',
 		},
 		{
-			label: 'Features',
-			navigatorId: '#features',
+			label: 'Contact',
+			navigatorId: '#contact_us',
 		},
 	];
+
 	return (
 		<Container
 			size='lg'
 			py='sm'
 			px={'lg'}
-			h={80}
-			className='bg-[#fff] flex items-center justify-between absolute w-full top-8 rounded-lg'
+			// h={80}
+			className='bg-[#fff] md:flex items-center justify-between fixed shadow-lg w-full top-8 rounded-lg'
 		>
-			<div className='logo_area'>HTransportLLC</div>
-			<div className='menu_area'>
+			<Title
+				className='md:text-left text-center md:mb-0 mb-2'
+				order={3}
+				color='yellow'
+				ff={'Nunito, sans-serif'}
+				fw={700}
+				mt={3}
+			>
+				H.TRANSPORT.LLC
+			</Title>
+			<div className='menu_area md:mt-0 mt-2'>
 				{menus.map((menu, idx) => (
 					<NavLink
 						key={idx}
-						label={menu?.label}
 						fw={500}
-						active={false}
 						color='#FFCC00'
-						mx={5}
+						mx={15}
+						component='a'
+						href={menu?.navigatorId}
+						label={menu?.label}
 					/>
 				))}
 			</div>

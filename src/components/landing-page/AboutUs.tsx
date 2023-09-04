@@ -3,7 +3,7 @@ import AboutUsImage from '../../assets/images/aboutus.jpg';
 
 const AboutUs = () => {
 	return (
-		<div className='text-center'>
+		<div className='text-center' id='about_us'>
 			<Title
 				className='!text-[35px] md:!text-[55px]'
 				ff={'Nunito, sans-serif'}

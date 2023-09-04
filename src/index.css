@@ -5,7 +5,9 @@
 @layer utilities {
 	.menu_area {
 		display: flex;
-		gap: 5;
+		/* gap: 5; */
 		align-items: center;
+		justify-content: space-evenly;
+		cursor: pointer;
 	}
 }

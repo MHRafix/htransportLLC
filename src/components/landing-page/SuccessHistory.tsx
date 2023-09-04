@@ -9,7 +9,7 @@ import CountUp from 'react-countup';
 
 const SuccessHistory = () => {
 	return (
-		<div className='text-center'>
+		<div className='text-center' id='success_history'>
 			<Title
 				className='!text-[35px] md:!text-[55px]'
 				ff={'Nunito, sans-serif'}

@@ -1,7 +1,7 @@
 import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 import React, { PropsWithChildren } from 'react';
 import { hTransportLLCEmotionCache } from '../../utils/emotionCache';
-import { Notifications } from '@mantine/notifications';
 
 const MantineProviderWrapper: React.FC<PropsWithChildren> = ({ children }) => {
 	return (
@@ -19,7 +19,7 @@ const MantineProviderWrapper: React.FC<PropsWithChildren> = ({ children }) => {
 				},
 			}}
 		>
-			<Notifications />
+			<Notifications position='top-right' />
 
 			{children}
 		</MantineProvider>

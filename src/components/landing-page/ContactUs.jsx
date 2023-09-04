@@ -11,43 +11,42 @@ import { useForm, yupResolver } from '@mantine/form';
 import { notifications } from '@mantine/notifications';
 import { IconCheck } from '@tabler/icons-react';
 import emailjs from 'emailjs-com';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import * as Yup from 'yup';
 import ContactUsImage from '../../assets/images/contact.jpg';
 
 const ContactUs = () => {
-	const [sending, setSending] = useState<boolean>(false);
+	const [sending, setSending] = useState(false);
+
+	const contactForm = useRef();
 
 	const form = useForm({
 		initialValues: CONTACT_FORM_DEFAULT_VALUES,
 		validate: yupResolver(CONTACT_VALIDATION_SCHEMA),
 	});
 
-	// @ts-ignore
-	const handleSubmit = (values) => {
+	const handleSubmit = () => {
 		setSending(true);
+		console.log(contactForm.current);
 		emailjs
 			.sendForm(
-				'service_2t9cjfb',
-				'template_pu6z1yj',
-				'.form',
-				'user_pLI6nCFTrlaFw52mO0PMA'
+				'service_o2us7mn',
+				'template_4dzktqb',
+				contactForm.current,
+				'MK4dczEFH1Vz4HxjE'
 			)
 			.then(
 				(result) => {
-					// Email sendis true hide the loader
-					if (result) {
-						setSending(false);
-						notifications.show({
-							title: 'Email successfully sent!',
-							message: 'You will get response soon. 🤥',
-							color: 'teal',
-							icon: <IconCheck size={16} />,
-						});
-					}
+					console.log(result);
+					setSending(false);
+					notifications.show({
+						title: 'Email successfully sent!',
+						message: 'You will get response soon. 🤥',
+						color: 'teal',
+						icon: <IconCheck size={16} />,
+					});
 				},
 				(error) => {
-					setSending(false);
 					console.log(error.text);
 				}
 			);
@@ -69,12 +68,13 @@ const ContactUs = () => {
 
 			<Space h={40} />
 			<div className='grid lg:grid-cols-2 gap-5'>
-				<form className='form' onSubmit={form.onSubmit(handleSubmit)}>
+				<form ref={contactForm} onSubmit={form.onSubmit(handleSubmit)}>
 					<TextInput
 						ff={'Nunito, sans-serif'}
 						label='Your name'
 						placeholder='Your name'
 						{...form.getInputProps('name')}
+						name='name'
 					/>
 					<TextInput
 						ff={'Nunito, sans-serif'}
@@ -82,6 +82,7 @@ const ContactUs = () => {
 						placeholder='Your email'
 						mt='md'
 						{...form.getInputProps('email')}
+						name='email'
 					/>
 					<TextInput
 						ff={'Nunito, sans-serif'}
@@ -89,6 +90,7 @@ const ContactUs = () => {
 						placeholder='Subject'
 						mt='md'
 						{...form.getInputProps('subject')}
+						name='subject'
 					/>
 					<Textarea
 						ff={'Nunito, sans-serif'}
@@ -96,6 +98,7 @@ const ContactUs = () => {
 						placeholder='Your message...'
 						mt='md'
 						{...form.getInputProps('message')}
+						name='message'
 					/>
 					<Button
 						type='submit'

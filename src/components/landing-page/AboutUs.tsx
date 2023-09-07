@@ -6,7 +6,7 @@ const AboutUs = () => {
 		<div className='text-center' id='about_us'>
 			<Title
 				className='!text-[35px] md:!text-[55px]'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				fw={800}
 				lh={1.2}
 				color='yellow'
@@ -22,21 +22,11 @@ const AboutUs = () => {
 			<div className='grid lg:grid-cols-2 gap-5'>
 				<img src={AboutUsImage} alt='image' className='w-[100%] rounded-lg' />
 				<div>
-					<Text ff={'Nunito, sans-serif'} fw={600} className='text-left'>
+					<Text ff={'Fraunces, serif'} fw={600} className='text-left'>
 						We are a taxi/livery/non-emergency medical transport business in the
 						Hudson, NY area. We take pleasure in getting you from point A to
 						point B safely and courteously. We officially started on 8th August
 						2019.
-						<Space h={10} />
-						Cupiditate, quasi! Cum excepturi accusantium aliquid ab earum nulla
-						sit inventore iure possimus assumenda tenetur, distinctio magnam!
-						Magni quidem a fugiat, aliquid autem et sequi sapiente quaerat saepe
-						debitis accusamus minima libero soluta illo, molestias tempore
-						nostrum tenetur!
-						<Space h={10} />
-						Cupiditate, quasi! Cum excepturi accusantium aliquid ab earum nulla
-						sit inventore iure possimus assumenda tenetur, distinctio magnam!
-						nostrum tenetur!
 					</Text>
 				</div>
 			</div>

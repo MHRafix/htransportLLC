@@ -54,7 +54,7 @@ const ContactUs = () => {
 		<Box id='contact_us'>
 			<Title
 				className='!text-[35px] md:!text-[55px] text-center'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				fw={800}
 				lh={1.2}
 				color='yellow'
@@ -73,14 +73,14 @@ const ContactUs = () => {
 					onSubmit={form.onSubmit(handleSubmit)}
 				>
 					<TextInput
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 						label='Your name'
 						placeholder='Your name'
 						{...form.getInputProps('name')}
 						name='name'
 					/>
 					<TextInput
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 						label='Your email'
 						placeholder='Your email'
 						mt='md'
@@ -88,7 +88,7 @@ const ContactUs = () => {
 						name='email'
 					/>
 					<TextInput
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 						label='Subject'
 						placeholder='Subject'
 						mt='md'
@@ -96,7 +96,7 @@ const ContactUs = () => {
 						name='subject'
 					/>
 					<Textarea
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 						label='Your message'
 						placeholder='Your message...'
 						mt='md'
@@ -106,7 +106,7 @@ const ContactUs = () => {
 					<Button
 						type='submit'
 						mt='md'
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 						color='yellow'
 						size='md'
 						loading={sending}

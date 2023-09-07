@@ -21,11 +21,11 @@ const AppHeader: React.FC = () => {
 				className='md:text-left text-center md:mb-0 mb-2'
 				order={3}
 				color='yellow'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				fw={700}
 				mt={3}
 			>
-				H.TRANSPORT.LLC
+				H TRANSPORT LLC
 			</Title>
 			<div className='menu_area md:mt-0 mt-2'>
 				{menus.map((menu, idx) => (

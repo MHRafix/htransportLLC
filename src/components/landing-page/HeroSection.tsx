@@ -5,7 +5,7 @@ const HeroSection = () => {
 		<Container size={'lg'} className=' mt-[100px]'>
 			<Text
 				color='red'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				className='!text-[35px] md:!text-[55px]'
 				fw={800}
 				lh={1.2}
@@ -14,7 +14,7 @@ const HeroSection = () => {
 			</Text>
 			<Text
 				color='yellow'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				fw={800}
 				my={0}
 				lh={1.2}
@@ -24,7 +24,7 @@ const HeroSection = () => {
 			</Text>
 			<Text
 				color='yellow'
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				className='!text-[35px] md:!text-[55px]'
 				fw={800}
 				my={0}
@@ -35,14 +35,14 @@ const HeroSection = () => {
 			<Text
 				ml={5}
 				mb={10}
-				ff={'Nunito, sans-serif'}
+				ff={'Fraunces, serif'}
 				size={18}
 				fw={600}
 				color='white'
 			>
 				Best car service in HUDSON NY
 			</Text>
-			<Button ml={5} ff={'Nunito, sans-serif'} color='yellow' size='lg' px={40}>
+			<Button ml={5} ff={'Fraunces, serif'} color='yellow' size='lg' px={40}>
 				Contact us
 			</Button>
 		</Container>

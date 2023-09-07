@@ -14,23 +14,23 @@ const AppFooter = () => {
 				py='sm'
 				className='md:flex items-center justify-between gap-5'
 			>
-				<Text ff={'Nunito, sans-serif'} color='gray' size={'sm'}>
-					All rights reserved by H.TRANSPORT.LLC © 2023
+				<Text ff={'Fraunces, serif'} color='gray' size={'sm'}>
+					All rights reserved by H TRANSPORT LLC © 2023
 				</Text>
 				<div className='md:flex items-center md:mt-0 mt-2'>
 					<Button
 						variant='subtle'
 						color='yellow'
 						leftIcon={<IconPhone size={20} />}
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 					>
-						5183642364
+						5185775388
 					</Button>
 					<Button
 						variant='subtle'
 						color='yellow'
 						leftIcon={<IconMail size={20} />}
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 					>
 						Info@htransportllc.com
 					</Button>
@@ -38,7 +38,7 @@ const AppFooter = () => {
 						variant='subtle'
 						color='yellow'
 						leftIcon={<IconMap2 size={20} />}
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 					>
 						Hudson NY, USA
 					</Button>
@@ -50,7 +50,7 @@ const AppFooter = () => {
 						rel='noopener noreferrer'
 						href='https://m.facebook.com/profile.php/?id=100028312376950&name=xhp_nt__fb__action__open_user'
 						leftIcon={<IconBrandFacebook size={20} />}
-						ff={'Nunito, sans-serif'}
+						ff={'Fraunces, serif'}
 					>
 						Facebook
 					</Button>

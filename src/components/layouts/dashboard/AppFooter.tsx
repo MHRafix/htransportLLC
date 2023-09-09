@@ -20,7 +20,7 @@ const AppFooter = () => {
 				<div className='md:flex items-center md:mt-0 mt-2'>
 					<Button
 						variant='subtle'
-						color='yellow'
+						color='dark'
 						leftIcon={<IconPhone size={20} />}
 						ff={'Fraunces, serif'}
 					>
@@ -28,7 +28,7 @@ const AppFooter = () => {
 					</Button>
 					<Button
 						variant='subtle'
-						color='yellow'
+						color='dark'
 						leftIcon={<IconMail size={20} />}
 						ff={'Fraunces, serif'}
 					>
@@ -36,7 +36,7 @@ const AppFooter = () => {
 					</Button>
 					<Button
 						variant='subtle'
-						color='yellow'
+						color='dark'
 						leftIcon={<IconMap2 size={20} />}
 						ff={'Fraunces, serif'}
 					>
@@ -44,7 +44,7 @@ const AppFooter = () => {
 					</Button>
 					<Button
 						variant='subtle'
-						color='yellow'
+						color='dark'
 						component='a'
 						target='_blank'
 						rel='noopener noreferrer'

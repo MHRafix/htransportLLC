@@ -4,7 +4,7 @@ const HeroSection = () => {
 	return (
 		<Container size={'lg'} className=' mt-[100px]'>
 			<Text
-				color='red'
+				color='white'
 				ff={'Fraunces, serif'}
 				className='!text-[35px] md:!text-[55px]'
 				fw={800}
@@ -12,26 +12,7 @@ const HeroSection = () => {
 			>
 				Need A Ride ?
 			</Text>
-			<Text
-				color='yellow'
-				ff={'Fraunces, serif'}
-				fw={800}
-				my={0}
-				lh={1.2}
-				className='!text-[35px] md:!text-[55px]'
-			>
-				CHOOSE YOUR
-			</Text>
-			<Text
-				color='yellow'
-				ff={'Fraunces, serif'}
-				className='!text-[35px] md:!text-[55px]'
-				fw={800}
-				my={0}
-				lh={1.2}
-			>
-				COMFORTABLE TAXI
-			</Text>
+
 			<Text
 				ml={5}
 				mb={10}
@@ -42,7 +23,14 @@ const HeroSection = () => {
 			>
 				Best car service in HUDSON NY
 			</Text>
-			<Button ml={5} ff={'Fraunces, serif'} color='yellow' size='lg' px={40}>
+			<Button
+				ml={5}
+				ff={'Fraunces, serif'}
+				color='dark'
+				size='lg'
+				px={40}
+				onClick={() => (location.hash = 'contact_us')}
+			>
 				Contact us
 			</Button>
 		</Container>

@@ -8,7 +8,6 @@ const AppHeader: React.FC = () => {
 		setPath(window.location.hash as string);
 	}, [window.location.hash]);
 
-	console.log(path);
 	return (
 		<Container
 			size='lg'
@@ -20,7 +19,7 @@ const AppHeader: React.FC = () => {
 			<Title
 				className='md:text-left text-center md:mb-0 mb-2'
 				order={3}
-				color='yellow'
+				color='dark'
 				ff={'Fraunces, serif'}
 				fw={700}
 				mt={3}
@@ -57,10 +56,6 @@ const menus = [
 	{
 		label: 'About',
 		navigatorId: '#about_us',
-	},
-	{
-		label: 'Success',
-		navigatorId: '#success_history',
 	},
 	{
 		label: 'Contact',

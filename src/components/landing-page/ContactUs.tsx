@@ -57,11 +57,11 @@ const ContactUs = () => {
 				ff={'Fraunces, serif'}
 				fw={800}
 				lh={1.2}
-				color='yellow'
+				color='dark'
 			>
 				Get in Touch
 			</Title>
-			<Text size={'md'} color='red' fw={500} className='text-center'>
+			<Text size={'md'} color='dark' fw={500} className='text-center'>
 				Book your ride with us
 			</Text>
 
@@ -107,7 +107,7 @@ const ContactUs = () => {
 						type='submit'
 						mt='md'
 						ff={'Fraunces, serif'}
-						color='yellow'
+						color='dark'
 						size='md'
 						loading={sending}
 					>

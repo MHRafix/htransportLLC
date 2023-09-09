@@ -9,11 +9,11 @@ const AboutUs = () => {
 				ff={'Fraunces, serif'}
 				fw={800}
 				lh={1.2}
-				color='yellow'
+				color='dark'
 			>
 				About Us
 			</Title>
-			<Text size={'md'} color='red' fw={500}>
+			<Text size={'md'} color='dark' fw={500}>
 				Who are we
 			</Text>
 

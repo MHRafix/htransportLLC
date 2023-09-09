@@ -33,7 +33,7 @@ const AppHeader: React.FC = () => {
 						ff={'Fraunces, serif'}
 						key={idx}
 						fw={500}
-						color='yellow'
+						color='dark'
 						mx={15}
 						component='a'
 						active={menu?.navigatorId === path}

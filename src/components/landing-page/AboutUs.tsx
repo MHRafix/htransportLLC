@@ -14,7 +14,7 @@ const AboutUs = () => {
 				About Us
 			</Title>
 			<Text size={'md'} color='dark' fw={500}>
-				Who are we
+				Who we are
 			</Text>
 
 			<Space h={40} />

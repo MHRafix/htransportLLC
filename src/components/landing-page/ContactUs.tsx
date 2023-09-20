@@ -29,14 +29,13 @@ const ContactUs = () => {
 		setSending(true);
 		emailjs
 			.sendForm(
-				'service_o2us7mn',
-				'template_4dzktqb',
+				'service_8tbhg0c',
+				'template_7o7qa2o',
 				contactForm.current!,
-				'MK4dczEFH1Vz4HxjE'
+				'uue70NypeLCW_OmHX'
 			)
 			.then(
-				(result) => {
-					console.log(result);
+				() => {
 					setSending(false);
 					notifications.show({
 						title: 'Email successfully sent!',
